@@ -34,3 +34,29 @@ virtualenv –p /usr/local/python/bin/python3.6 [虚拟环境名]
 source /root/[环境名]/bin/activate
 deactivate
 ```
+
+## 安装Youtube-dl
+```
+wget https://yt-dl.org/downloads/latest/youtube-dl -O /usr/local/bin/youtube-dl
+chmod a+rx /usr/local/bin/youtube-dl
+```
+
+## 安装 FFmpeg
+```
+#安装 yasm
+wget http://www.tortall.net/projects/yasm/releases/yasm-1.3.0.tar.gz
+tar -zxvf yasm-1.3.0.tar.gz
+cd yasm-1.3.0
+./configure
+make
+make install
+
+#安装 FFmpeg
+cd /root
+wget http://www.ffmpeg.org/releases/ffmpeg-3.3.3.tar.gz
+tar -zxvf ffmpeg-3.3.3.tar.gz
+cd ffmpeg-3.3.3
+./configure
+make
+make install
+```
