@@ -25,3 +25,12 @@ vim /etc/profile
 export PATH="/usr/local/python/bin:$PATH"	#(注意:等号两边都不能有任何的空格)
 source /etc/profile
 ```
+## virtualenv 使用
+```
+pip3 install virtualenv
+virtualenv –p /usr/local/python/bin/python3.6 [虚拟环境名]
+
+#进入和退出
+source /root/[环境名]/bin/activate
+deactivate
+```
