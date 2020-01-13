@@ -72,8 +72,11 @@ bash go.sh
 systemctl start v2ray
 systemctl stop v2ray
 systemctl restart v2ray
+
+systemctl enable v2ray #开机启动
 ```
 ## 配置
+/etc/v2ray/config.json
 ```
 {
   "inbounds": [
@@ -94,5 +97,5 @@ systemctl restart v2ray
     }
   ]
 }
-systemctl enable v2ray
+
 ```
