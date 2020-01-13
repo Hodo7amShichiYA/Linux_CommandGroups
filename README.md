@@ -60,3 +60,39 @@ cd ffmpeg-3.3.3
 make
 make install
 ```
+## 安装 V2R
+```
+yum -y install wget
+wget https://install.direct/go.sh
+yum install -y zip unzip  
+bash go.sh
+```
+## 控制
+```
+systemctl start v2ray
+systemctl stop v2ray
+systemctl restart v2ray
+```
+## 配置
+```
+{
+  "inbounds": [
+    {
+      "port": 1024, // 监听端口
+      "protocol": "shadowsocks",
+      "settings": {
+        "method": "aes-128-gcm",
+        "ota": true, // 是否开启 OTA
+        "password": "sspasswd"
+      }
+    }
+  ],
+  "outbounds": [
+    {
+      "protocol": "freedom",  
+      "settings": {}
+    }
+  ]
+}
+systemctl enable v2ray
+```
