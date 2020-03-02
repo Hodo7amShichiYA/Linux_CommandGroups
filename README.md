@@ -1,4 +1,21 @@
 # Linux_CommandGroups
+## 基本操作:
+### 修改宝塔端口:
+```
+echo '123456' > /www/server/panel/data/port.pl && service bt restart
+```
+### centos7关闭端口:
+```
+firewall-cmd --permanent --zone=public --remove-port=123456/tcp
+```
+### centos7放行端口:
+```
+firewall-cmd --zone=public --add-port=123456/tcp --permanent 
+```
+### centos7防火墙重载:
+```
+systemctl reload firewalld
+```
 
 ## yum安装:
 
