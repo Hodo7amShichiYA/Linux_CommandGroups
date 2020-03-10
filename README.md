@@ -30,9 +30,9 @@ yum makecache
 ```
 yum groupinstall "development tools"
 yum install zlib-devel bzip2-devel openssl-devel ncurses-devel sqlite-devel readline-devel tk-devel gdbm-devel db4-devel libpcap-devel xz-devel expat-devel
-wget https://www.python.org/ftp/python/3.6.3/Python-3.6.3.tgz
-tar -xvf Python-3.6.3.tgz
-cd Python-3.6.3
+wget https://www.python.org/ftp/python/3.7.6/Python-3.7.6.tgz
+tar -xvf Python-3.7.6.tgz
+cd Python-3.7.6
 ./configure --enable-optimizations --prefix=/usr/local/python
 make
 make install
