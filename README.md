@@ -44,11 +44,13 @@ source /etc/profile
 ```
 ## virtualenv 使用
 ```
-pip3 install virtualenv
-virtualenv –p /usr/local/python/bin/python3.7 [虚拟环境名]
+cd /www/wwwroot/你的项目文件夹  # 文件夹为创建的名字根目录
+python3 -m venv venv
+pip install uwsgi
+pip install -r requirements.txt
 
 #进入和退出
-source /root/[环境名]/bin/activate
+source venv/bin/activate
 deactivate
 ```
 
