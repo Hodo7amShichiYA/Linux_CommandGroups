@@ -46,8 +46,8 @@ source /etc/profile
 ```
 cd /www/wwwroot/你的项目文件夹  # 文件夹为创建的名字根目录
 python3 -m venv venv
-pip install uwsgi
-pip install -r requirements.txt
+pip3 install uwsgi
+pip3 install -r requirements.txt
 
 #进入和退出
 source venv/bin/activate
